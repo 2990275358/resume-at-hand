@@ -1,0 +1,74 @@
+<svg
+  data-v-6b808fc6=""
+  id="shape_HTDbvxvjZK"
+  data-noselect=""
+  viewBox="0 0 3600 3600"
+  width="3600"
+  height="3600"
+  preserveAspectRatio="none"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  class="svg-canvas"
+>
+  <defs data-v-6b808fc6=""></defs>
+  <!---->
+  <!---->
+  <g data-v-6b808fc6="" mask="">
+    <g
+      data-v-6b808fc6=""
+      transform="translate(160,220.40659465567) rotate(0,79.560062659572,79.59340534433) scale(1,1)"
+      filter=""
+      style="opacity: 1"
+    >
+      <g data-v-6b808fc6="">
+        <rect
+          fill="rgba(0,0,0,0)"
+          width="179.12012531914"
+          height="179.18681068866"
+          x="0"
+          y="0"
+        ></rect>
+        <svg
+          version="1.1"
+          id="圖層_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 238.3001251220703 238.39999389648438"
+          style="enable-background: new 0 0 238.4 238.4"
+          xml:space="preserve"
+          width="3600"
+          height="3600"
+          class="style-removed"
+          preserveAspectRatio="none"
+          data-parent="shape_HTDbvxvjZK"
+        >
+          <g>
+            <path
+              d="M119.2,0C53.4,0,0,53.4,0,119.2c0,54.5,36.6,100.4,86.5,114.7v-39.8h-8c-21.1,0-38.3-17.2-38.3-38.3V97.1
+      c0-21.1,17.2-38.3,38.3-38.3h86.9c21.1,0,38.3,17.2,38.3,38.3v58.7c0,21.1-17.2,38.3-38.3,38.3h-42.3L107.5,234l-1.6,3.7
+      c4.4,0.5,8.8,0.7,13.2,0.7c65.8,0,119.2-53.4,119.2-119.2C238.4,53.4,185,0,119.2,0z"
+              fill="#40f536"
+              stroke-width="0"
+            ></path>
+            <path
+              d="M177.3,125v-21.7c0-6.6-5.4-12-12-12H77.1c-6.6,0-12,5.4-12,12V125c0,6.6,5.4,12,12,12h88.2
+      C171.9,137,177.3,131.6,177.3,125z M106.3,126.8c0,3.2-2.6,5.7-5.7,5.7h-5.4c-3.1,0-5.7-2.6-5.7-5.7v-22.7c0-3.1,2.6-5.7,5.7-5.7
+      h5.4c3.2,0,5.7,2.6,5.7,5.7V126.8z M155.6,126.8c0,3.2-2.6,5.7-5.7,5.7h-5.4c-3.2,0-5.7-2.6-5.7-5.7v-22.7c0-3.1,2.6-5.7,5.7-5.7
+      h5.4c3.1,0,5.7,2.6,5.7,5.7V126.8z"
+              fill="#40f536"
+              stroke-width="0"
+            ></path>
+            <path
+              d="M150,158.5V158H97.8v0.5c0,0,2,22.4,26.1,22.4C148,180.9,150,158.5,150,158.5z"
+              fill="#40f536"
+              stroke-width="0"
+            ></path>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+</svg>

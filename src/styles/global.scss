@@ -1,0 +1,202 @@
+:root {
+  // 顶部导航栏高度
+  --nav-bar-height: 66px;
+  // 圆角
+  --radius: 5px;
+  // 字体
+  --font-size: 16px;
+  // 页面边距
+  --pages-margin: 10px;
+  // 行间距
+  --row-space: 20px;
+  // 列间距
+  --col-space: 10px;
+  // 失焦后的颜色
+  font-family: "Source Han Sans SC", "Roboto", sans-serif;
+
+  /* 主题色系 */
+  --primary-color: #00838f;
+  --primary-dark: #006064;
+  --primary-light: #4fb3bf;
+  --primary-lighter: #80cbc4;
+  --primary-gradient: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-dark) 100%
+  );
+
+  /* 副主题色系 */
+  --secondary-color: #ff7043;
+  --secondary-dark: #d84315;
+  --secondary-light: #ffab91;
+  --secondary-gradient: linear-gradient(135deg, #ff7043 0%, #ff5722 100%);
+
+  /* 中性色系 */
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --text-tertiary: #bdbdbd;
+  --text-disabled: #e0e0e0;
+
+  /* 背景色系 */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --bg-tertiary: #eceff1;
+  --bg-overlay: rgba(0, 0, 0, 0.6);
+
+  /* 边框色系 */
+  --border-light: #e1e8ed;
+  --border-medium: #cfd8dc;
+  --border-dark: #90a4ae;
+
+  /* 状态色系 */
+  --success-color: #4caf50;
+  --success-light: #c8e6c9;
+  --warning-color: #ff9800;
+  --warning-light: #ffe0b2;
+  --error-color: #f44336;
+  --error-light: #ffcdd2;
+  --info-color: #2196f3;
+  --info-light: #bbdefb;
+
+  /* 阴影色系 */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --shadow-primary: rgba(0, 131, 143, 0.4);
+  --shadow-secondary: rgba(255, 112, 67, 0.3);
+
+  /* 透明度变体 */
+  --primary-alpha-10: rgba(0, 131, 143, 0.1);
+  --primary-alpha-20: rgba(0, 131, 143, 0.2);
+  --primary-alpha-30: rgba(0, 131, 143, 0.3);
+  --white-alpha-10: rgba(255, 255, 255, 0.1);
+  --white-alpha-20: rgba(255, 255, 255, 0.2);
+  --white-alpha-30: rgba(255, 255, 255, 0.3);
+
+  --el-color-primary: var(--primary-color);
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4851408 */
+  src:
+    url("https://at.alicdn.com/t/c/font_4851408_qbdjbbd397.woff2?t=1741513911012")
+      format("woff2"),
+    url("https://at.alicdn.com/t/c/font_4851408_qbdjbbd397.woff?t=1741513911012")
+      format("woff"),
+    url("https://at.alicdn.com/t/c/font_4851408_qbdjbbd397.ttf?t=1741513911012")
+      format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mobanguanli:before {
+  content: "\e63c";
+}
+
+.icon-biaoti:before {
+  content: "\e9f8";
+}
+
+.icon-zhengchangzhuangtai:before {
+  content: "\e6b5";
+}
+
+.icon-pifu:before {
+  content: "\e6cb";
+}
+
+.icon-a-Language:before {
+  content: "\e631";
+}
+
+p,
+div,
+span,
+button,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+ol,
+li {
+  font-family: var(--font-family, "syst", sans-serif);
+  color: var(--black-color);
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+#app {
+  min-height: 100%;
+  background-color: var(--bg-secondary);
+}
+.s-flex {
+  display: flex;
+}
+.s-align-center {
+  align-items: center;
+}
+.s-transition {
+  transition: all 0.3s ease-in-out;
+}
+.s-rotateZ {
+  transform: rotateZ(180deg);
+}
+.s-lr-padding-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fontbold {
+  font-weight: bold;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: var(--radius);
+}
+
+.control-panel {
+  width: 280px;
+  position: sticky;
+  padding: 20px;
+  box-sizing: border-box;
+  top: calc(var(--nav-bar-height) + 20px);
+  background-color: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 15px var(--shadow-light);
+}
+
+.btn-hover {
+  transition: all 0.3s ease;
+}
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--shadow-primary);
+}
+
+.el-button.el-button--primary {
+  background: var(--primary-gradient);
+  border-color: var(--primary-color);
+  color: var(--bg-primary);
+  &:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}

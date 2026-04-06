@@ -1,0 +1,152 @@
+[
+  {
+    "id": "XiZ2RxKIpY4SS54MF6SOu",
+    "title": "基本信息",
+    "data": [
+      { "id": "vP0-QoqffNkPC8OqD4VNM", "name": "您的姓名", "value": "王有为" },
+      {
+        "id": "qcCw1iF7uezsnY8bNlLM9",
+        "name": "您的性别",
+        "value": "info.male"
+      },
+      { "id": "MEk5xk1e__dFPLjk6Cwj1", "name": "年龄", "value": 24 },
+      { "id": "UKCaea0DpmipJ5oxM7aig", "name": "籍贯", "value": "汉" },
+      {
+        "id": "Csf7rSKwbLzR0hjqvNGnD",
+        "name": "联系电话",
+        "value": "15828917951"
+      },
+      {
+        "id": "oNbINXFzSI8LlID90kNHc",
+        "name": "联系邮箱",
+        "value": "2990275358@qq.com"
+      },
+      {
+        "id": "7tIS9SXceVs85A2D7Mmi3",
+        "name": "婚姻状况",
+        "value": "maritalStatus.unmarried"
+      },
+      { "id": "xfxLEdTPby9fIJLxg57T3", "name": "工作年限", "value": "1.5" },
+      {
+        "id": "rHTRgtSgYMh2KhHnzOF0i",
+        "name": "求职岗位",
+        "value": "前端工程师"
+      },
+      { "id": "lOGxxYMYYZCEQpgsuUgYI", "name": "政治面貌", "value": "中共党员" }
+    ],
+    "isShowAvartar": true
+  },
+  {
+    "id": "OJih5SH60ToiHg7-JJKFk",
+    "title": "工作经历",
+    "index": 1,
+    "data": [
+      {
+        "id": "YFcpbAArPaiEYWzKUfPE_",
+        "richText": "<p><br></p>",
+        "index": 0,
+        "data": [
+          {
+            "id": "UaUA2Jovn4gTp2SKRAYDv",
+            "name": "在职日期",
+            "value": "2023-12 ~ 至今"
+          }
+        ]
+      },
+      {
+        "id": "SufQzquc869E5f9O5d9zd",
+        "richText": "<p><br></p>",
+        "index": 1,
+        "data": [
+          {
+            "id": "rPn__HWNTVQy0faneJEI1",
+            "name": "公司名称",
+            "value": "你好"
+          },
+          { "id": "8hcPyef2Zl0TyQdNgQnwX", "name": "职位", "value": "哈哈" },
+          {
+            "id": "3f2UGEsvBcTzoEA-dN8fY",
+            "name": "在职日期",
+            "value": "2025-06 ~ 2025-11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "IVBWQhWgsCPMSowyhNd4M",
+    "title": "教育背景",
+    "index": 2,
+    "data": [
+      {
+        "id": "ultcirP8ZysoHjwMFSmQr",
+        "richText": "",
+        "index": 0,
+        "data": [
+          {
+            "id": "kwSPzfyM6PzsK9QkKEIzJ",
+            "name": "就读时间",
+            "value": "2023-12 ~ 2023-12"
+          },
+          {
+            "id": "_SUA_RGWzb0eSnNQdVRhb",
+            "name": "学历",
+            "value": "notFilled"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4w5YvqlSDYef07woELgKE",
+    "title": "技能特长",
+    "data": [
+      {
+        "id": "_qr283UFcr1O_Ac2eJk1A",
+        "richText": "",
+        "tags": { "type": "tag_skilled", "data": [] }
+      }
+    ]
+  },
+  {
+    "id": "G7w_yEBc_NEqXkyWt_R_v",
+    "title": "项目经验",
+    "index": 4,
+    "data": [
+      {
+        "id": "wo0B-EXxn6OvdWm9xBoV4",
+        "richText": "",
+        "index": 0,
+        "data": [
+          {
+            "id": "CQjXpfkTi1hBwLEU0U9_K",
+            "name": "项目时间",
+            "value": "2023-12 ~ 至今"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aC1GhQKswLjCW0H88nDGQ",
+    "title": "兴趣爱好",
+    "data": [
+      {
+        "id": "NfTJJIkAKZN2AhPwnID_i",
+        "richText": "",
+        "tags": { "type": "tag_nomal", "data": [] }
+      }
+    ]
+  },
+  {
+    "id": "jQ0GSbval9V9P1mNM-0FW",
+    "title": "自我评价",
+    "data": [
+      {
+        "id": "G-KLSk0XZd2nzrmzsRCAB",
+        "richText": "",
+        "tags": { "type": "tag_nomal", "data": [] }
+      }
+    ]
+  }
+]
