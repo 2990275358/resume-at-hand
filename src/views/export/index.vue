@@ -1,27 +1,44 @@
 <script lang="ts" setup>
-import { ref } from "vue"
+import { onMounted, onUnmounted, ref } from "vue"
 import TemplateSlot from "@/components/template_slot"
 import { getResumeById, type IResume } from "@/service/indexedDB"
 import { useDataStore, useThemeStore } from "@/store"
-import { queryTempReume } from "@/service"
 
 const props = defineProps<{ id: string }>()
 const resume = ref<IResume>()
 const themeStore = useThemeStore()
 const dataStore = useDataStore()
 
-async function getResume() {
-  let data = await getResumeById(props.id)
+async function setReumeData(data: IResume | undefined) {
   if (!data) {
-    const { data: resData } = await queryTempReume(props.id)
-    data = resData
+    return
   }
+  resume.value = data
   dataStore.$patch({
     imgUrl: data!.avatar
   })
   themeStore.$patch(data!.content.theme)
   resume.value = data
+  setTimeout(() => {
+    window.dispatchEvent(
+      new CustomEvent("app-ready-for-pdf", { bubbles: true })
+    )
+  }, 500)
 }
+
+async function getResume() {
+  let data = await getResumeById(props.id)
+  setReumeData(data)
+}
+function eventHandle(event: any) {
+  setReumeData(event.detail)
+}
+onMounted(() => {
+  window.addEventListener("resume:ready", eventHandle)
+})
+onUnmounted(() => {
+  window.removeEventListener("resume:ready", eventHandle)
+})
 getResume()
 </script>
 

@@ -273,7 +273,7 @@ const handleSelectAll = (value?: any) => {
                 </div>
                 <div class="img-wrapper">
                   <img
-                    src="../../assets//img/resume_1.png"
+                    :src="`/public/resume_${resume.content.templateId!}.png`"
                     alt=""
                     draggable="false"
                   />
