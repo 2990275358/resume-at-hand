@@ -60,11 +60,11 @@ class JmrRequest {
           ...value.data
         }
       },
-      (_) => {
+      (err) => {
         return {
           isOk: false,
           code: 500,
-          msg: "服务器错误"
+          msg: err?.message || "服务器错误"
         }
       }
     )

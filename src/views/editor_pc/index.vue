@@ -78,7 +78,6 @@ const keydown = (e: KeyboardEvent) => {
   if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
     e.preventDefault()
     handleUpdateResume()
-    console.log("保存成功", e.metaKey)
     ElMessage.success("保存成功")
   }
 }

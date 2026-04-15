@@ -69,6 +69,6 @@ export const resetPassword = async (body: {
 
 export const queryResumeIds = async () => {
   return request.get<string[]>({
-    url: API.resume
+    url: API.resume + "/ids"
   })
 }
