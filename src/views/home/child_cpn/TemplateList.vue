@@ -6,11 +6,11 @@ const emit = defineEmits<{
 const templateList = [
   {
     id: "1",
-    cover: "/public/resume_1.png"
+    cover: "/resume_1.png"
   },
   {
     id: "2",
-    cover: "/public/resume_2.png"
+    cover: "/resume_2.png"
   }
 ]
 const handleClick = (id: string) => {

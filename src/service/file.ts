@@ -16,3 +16,10 @@ export const queryTempReume = (id: string) => {
     url: API.file + `/resume/${id}`
   })
 }
+
+export const uploadFileApi = (formData: FormData) => {
+  return request.post<{ url: string }>({
+    url: API.file + `/upload`,
+    data: formData
+  })
+}

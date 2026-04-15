@@ -8,16 +8,18 @@ import {
 } from "element-plus"
 import type { BasicInfoContentType } from "@/config.ts"
 import { useDataStore } from "@/store"
+import { uploadFileApi } from "@/service/file"
 
 const dataStore = useDataStore()
 const config = defineModel<BasicInfoContentType["config"]>("config")
-const handleChange = (uploadFile: UploadFile) => {
-  const reader = new FileReader()
-  reader.readAsDataURL(uploadFile.raw as Blob)
-  reader.onload = () => {
-    const base64 = reader.result as string
-    dataStore.imgUrl = base64
+const handleChange = async (uploadFile: UploadFile) => {
+  const formData = new FormData()
+  formData.append("file", uploadFile.raw as Blob)
+  const { isOk, data } = await uploadFileApi(formData)
+  if (!isOk) {
+    return
   }
+  dataStore.imgUrl = import.meta.env.VITE_API_BASE_URL + data?.url || ""
 }
 </script>
 
